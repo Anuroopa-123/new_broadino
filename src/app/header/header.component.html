@@ -99,6 +99,9 @@
     <li class="active">
       <a [routerLink]="['/labs', labs[0]?.key]">Labs</a>
     </li>
+    <li class="active">
+      <a [routerLink]="['/media']">Media</a>
+    </li>
 
     <!-- Technical Capabilities -->
     <!-- <li class="dropdown" [ngClass]="{ 'active': isDropdownOpen['Technical_capability'] }"
@@ -166,11 +169,11 @@
       [ngClass]="{ active: isDropdownOpen['naanmudhalvan'] }"
       (click)="toggleDropdown('naanmudhalvan')"
     > -->
-      <!-- <span class="active">
+    <!-- <span class="active">
         Acadamic Initiative
 
       </span> -->
-      <!-- <ul class="dropdown-menu">
+    <!-- <ul class="dropdown-menu">
         <li>
           <i class="fa-solid fa-angles-right"></i
           ><a [routerLink]="['']">Naan Mudhalvan</a>

@@ -10,4 +10,5 @@ export const routes: Routes = [
   { path: 'aboutus', component: AboutusComponent },
   { path: 'labs/:key', component: MenulabsComponent },
   { path: 'contact_us', component: ContactComponent },
+  { path: 'labs', component: MenulabsComponent },
 ];

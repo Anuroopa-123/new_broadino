@@ -263,7 +263,7 @@
     color: #01539A;
     margin: -4px 0;
     font-family: "Red Rose", serif;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 /* Bottom: Secondary heading */

@@ -96,6 +96,9 @@
     <li class="active">
       <a [routerLink]="['/aboutus']" routerLinkActive="active">About Us</a>
     </li>
+    <li class="active">
+      <a [routerLink]="['/labs', labs[0]?.key]">Labs</a>
+    </li>
 
     <!-- Technical Capabilities -->
     <!-- <li class="dropdown" [ngClass]="{ 'active': isDropdownOpen['Technical_capability'] }"
@@ -118,28 +121,29 @@
     </li> -->
 
     <!-- LABS Dropdown -->
-    <li
+
+    <!-- <li
       class="dropdown"
       [ngClass]="{ active: isDropdownOpen['services'] }"
       (click)="toggleDropdown('services')"
     >
       <span class="active">
-        Labs
-        <!-- <i
+        Labs -->
+    <!-- <i
           class="fa-solid"
           [ngClass]="{
             'fa-chevron-down': !isDropdownOpen['services'],
             'fa-chevron-up': isDropdownOpen['services']
           }"
         ></i> -->
-      </span>
-      <!-- <ul class="dropdown-menu">
+    <!-- </span> -->
+    <!-- <ul class="dropdown-menu">
         <li *ngFor="let lab of labs">
           <i class="fa-solid fa-angles-right"></i>
           <a [routerLink]="['/labs', lab.key]">{{ lab.title }}</a>
         </li>
       </ul> -->
-    </li>
+    <!-- </li> -->
 
     <!-- Technical Capabilities -->
     <!-- <li class="dropdown" [ngClass]="{ 'active': isDropdownOpen['Project'] }"

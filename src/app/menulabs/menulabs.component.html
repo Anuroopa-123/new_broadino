@@ -1,1 +1,102 @@
-<p>menulabs works!</p>
+<section class="top_title">
+  <div class="card">
+    <p>
+      <span class="highlight">Broadino</span> Broadline is a
+      <Strong>ISO 9001-2008</Strong>
+      company with over three decades of rich experience in Software
+      development, System Integration, Application development and Best
+      computing Practices. Broadline incorporated in 1991 based at Chennai ,
+      India provides a complete spectrum of consulting, technology, Hardware,
+      Networking and product engineering services. In a crowded and intensely
+      competitive marketplace for such offerings, we have built a reputation and
+      core differentiating attribute around our unique Business Outcomes-based
+      model. Armed with over two decades of IT Services experience and our
+      distinctive philosophy of Accountable for Clients Business, our
+      multi-location organization consistently delivers effective solutions to
+      many Government, Public sector & Corporate clients.
+    </p>
+    <p>
+      Broadline has been instrumental in innovating many State and Federal
+      Government IT initiatives for
+      <Strong
+        >e- Governance, especially those centered on the Health, Defense,
+        Education, Public Sector and Power industries.</Strong
+      >
+      In the Public Health sector, with a special focus on developing a
+      comprehensive , Broadline had designed and developed a model that was
+      widely appreciated by the WHO and World Bank. The system was further
+      scaled and adapted for use in implementing the prestigious Prime
+      Minister’s Rural Health Mission for the rest of India, and was even
+      extended to five other foreign countries. This initiative by Broadline won
+      the prestigious Prime Minister’s E-Governance Award for successful
+      innovation in the year 2000. Broadline has also been productively involved
+      in pioneering and developing Power and Energy sector applications in the
+      States of Tamil Nadu, Gujarat and Madhya Pradesh.
+    </p>
+  </div>
+
+  <div class="card-list-container">
+    <div class="card">
+      <h2>Services We Provide</h2>
+      <ul class="services-list">
+        <li>
+          Customized software development and system integration solutions
+        </li>
+        <li>Comprehensive IT consulting with a focus on business outcomes</li>
+        <li>
+          Application development aligned with industry best computing practices
+        </li>
+        <li>
+          Development and implementation of government and public sector IT
+          initiative
+        </li>
+        <li>
+          Specialized solutions for Health, Defense, Education, Public Sector,
+          and Power industries
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Tabs -->
+<div class="tabs-container">
+  <button
+    *ngFor="let lab of labs; let i = index"
+    (click)="selectLab(i)"
+    [class.active-tab]="i === selectedLabIndex"
+    class="lab-tab"
+  >
+    {{ lab.title }}
+  </button>
+</div>
+
+<!-- Lab content slider -->
+<section class="lab-section" *ngIf="currentItem">
+  <div class="lab-container">
+    <div class="lab-slider-container" *ngIf="currentItem">
+      <div class="lab-title">
+        <h2>{{ currentItem.title }}</h2>
+      </div>
+
+      <div class="lab-slide">
+        <div class="lab-image">
+          <button class="nav-arrow left-arrow" (click)="prevSlide()">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <img [src]="currentItem.image" [alt]="currentItem.title" />
+        </div>
+
+        <div class="lab-details">
+          <p>{{ currentItem.description }}</p>
+          <button class="nav-arrow right-arrow" (click)="nextSlide()">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="software" *ngIf="currentItem.software">
+        <p><strong>Software Using :</strong> {{ currentItem.software }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -4,6 +4,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { LabscontentComponent } from './labscontent/labscontent.component';
 import { MenulabsComponent } from './menulabs/menulabs.component';
 import { ContactComponent } from './contact/contact.component';
+import { MediapageComponent } from './mediapage/mediapage.component';
 
 export const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -11,4 +12,5 @@ export const routes: Routes = [
   { path: 'labs/:key', component: MenulabsComponent },
   { path: 'contact_us', component: ContactComponent },
   { path: 'labs', component: MenulabsComponent },
+  { path: 'media', component: MediapageComponent },
 ];

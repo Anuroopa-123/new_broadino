@@ -237,7 +237,7 @@
 }
 
 .imagesection img {
-    max-width: 100%;
+    max-width: 170%;
     height: 60px;
 }
 
@@ -945,7 +945,7 @@
     }
 }
 
-.title-top_sub{
+.title-top_sub {
     font-size: 1rem;
     font-weight: bold;
     color: #01539A;

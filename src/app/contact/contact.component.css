@@ -183,7 +183,7 @@ button:active {
     display: flex;
     justify-content: center;
     gap: 15px;
-    width: 30%;
+    width: 40%;
     font-family: "Afacad Flux", serif;
 }
 
@@ -212,6 +212,16 @@ button:active {
 .card p {
     font-size: 24px;
     color: #36486b;
+}
+
+.card p a{
+    color: #36486b;
+    text-decoration: none;
+}
+
+.card p a:hover {
+    text-decoration: underline;
+    color: #01539A;
 }
 
 .card:hover {

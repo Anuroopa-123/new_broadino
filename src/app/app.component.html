@@ -2,13 +2,13 @@
 <div class="popup-overlay" *ngIf="showPopup">
   <div class="popup">
     <!-- Previous Button -->
-    <button
+    <!-- <button
       class="nav-btn prev"
       (click)="prevImage()"
       [disabled]="currentImageIndex === 0"
     >
       ❮
-    </button>
+    </button> -->
 
     <!-- Popup Image -->
     <!-- <img [src]="popupImages[currentImageIndex]" alt="Popup Image"> -->
@@ -17,9 +17,9 @@
     <!-- <button class="nav-btn next" (click)="nextImage()" [disabled]="currentImageIndex === popupImages.length - 1">❯</button> -->
 
     <!-- Close Button -->
-    <button class="close-btn" (click)="closePopup()">
+    <!-- <button class="close-btn" (click)="closePopup()">
       <i class="fa-solid fa-xmark"></i>
-    </button>
+    </button> -->
   </div>
 </div>
 

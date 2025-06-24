@@ -22,12 +22,12 @@
       <!-- <span class="default-notification">New Notification</span> -->
       <!-- Default notification -->
       <div class="scrolling-content">
-        <a class="notification-link" href="https://tansam.org">
-          <!-- <p class="notification-text">
+        <!-- <a class="notification-link" href="https://tansam.org"> -->
+        <!-- <p class="notification-text">
             <i class="fa-solid fa-bell fa-shake"></i> Broadino is offering a new
             internship !!!
           </p> -->
-        </a>
+        <!-- </a> -->
       </div>
     </div>
   </div>
@@ -83,13 +83,13 @@
 <!-- Navigation start here -->
 <nav class="navbar" [ngClass]="{ sticky: isScrolled }">
   <!-- Hamburger Menu (Toggles Open/Close) -->
-  <div
+  <!-- <div
     class="hamburger"
     (click)="toggleMenu()"
     [ngClass]="{ 'close-icon': isMenuOpen }"
   >
     {{ isMenuOpen ? "✖" : "☰" }}
-  </div>
+  </div> -->
 
   <ul class="nav-list" [ngClass]="{ active: isMenuOpen }">
     <li class="active"><a href="#">Home</a></li>
@@ -125,13 +125,13 @@
     >
       <span class="active">
         Labs
-        <i
+        <!-- <i
           class="fa-solid"
           [ngClass]="{
             'fa-chevron-down': !isDropdownOpen['services'],
             'fa-chevron-up': isDropdownOpen['services']
           }"
-        ></i>
+        ></i> -->
       </span>
       <!-- <ul class="dropdown-menu">
         <li *ngFor="let lab of labs">
@@ -164,13 +164,13 @@
     >
       <span class="active">
         Acadamic Initiative
-        <i
+        <!-- <i
           class="fa-solid"
           [ngClass]="{
             'fa-chevron-down': !isDropdownOpen['naanmudhalvan'],
             'fa-chevron-up': isDropdownOpen['naanmudhalvan']
           }"
-        ></i>
+        ></i> -->
       </span>
       <!-- <ul class="dropdown-menu">
         <li>
@@ -201,13 +201,13 @@
     >
       <span class="active">
         Media
-        <i
+        <!-- <i
           class="fa-solid"
           [ngClass]="{
             'fa-chevron-down': !isDropdownOpen['media'],
             'fa-chevron-up': isDropdownOpen['media']
           }"
-        ></i>
+        ></i> -->
       </span>
     </li>
     <li class="active"><a [routerLink]="['Brochure']">Brochures</a></li>

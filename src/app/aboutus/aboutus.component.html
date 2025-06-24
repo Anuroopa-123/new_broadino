@@ -1,0 +1,23 @@
+<div class="about-container">
+  <!-- Tabs Navigation -->
+  <div class="tabs">
+    <button
+      class="tab"
+      *ngFor="let tab of tabs"
+      (click)="selectTab(tab.id)"
+      [class.active]="selectedTab === tab.id"
+    >
+      {{ tab.title }}
+    </button>
+  </div>
+
+  <!-- Tab Content -->
+  <div class="tab-content">
+    <ng-container *ngFor="let tabItem of tabs">
+      <div *ngIf="selectedTab === tabItem.id">
+        <h4>{{ tabItem.title1 }}</h4>
+        <p>{{ tabItem.content }}</p>
+      </div>
+    </ng-container>
+  </div>
+</div>

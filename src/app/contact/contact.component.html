@@ -1,0 +1,83 @@
+<div class="contact-container">
+  <div class="contact-content">
+    <!-- Right Side: Embedded Map -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.165487579307!2d-77.36756302432055!3d38.956628244290376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b64b5cb86cc1f9%3A0x5b6d83970ef4aa60!2s12310%20Pinecrest%20Rd%20%23306%2C%20Reston%2C%20VA%2020191%2C%20USA!5e0!3m2!1sen!2sus!4v1719248285714!5m2!1sen!2sus"
+        width="100%"
+        height="450"
+        style="border: 0; padding: 3px"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+
+    <!-- Left Side: Contact Form -->
+    <div class="contact-wrapper" [ngClass]="{ sent: isSent }">
+      <form
+        class="contact-form"
+        [formGroup]="contactForm"
+        (ngSubmit)="sendLetter()"
+      >
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you!</p>
+        <textarea
+          formControlName="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <input
+          type="text"
+          formControlName="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          formControlName="email"
+          placeholder="Your Email"
+          required
+        />
+        <button type="submit">
+          <div class="svg-wrapper-1">
+            <div class="svg-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path
+                  fill="currentColor"
+                  d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <span>Send</span>
+        </button>
+      </form>
+
+      <div class="success-message">
+        <p>🎉 Thank you! Your message has reached us.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay Card with Phone Number -->
+  <div class="overlay-cards">
+    <div class="card">
+      <i class="fas fa-phone"></i>
+      <h3>Phone</h3>
+      <p>+1-224-537-7490</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-envelope"></i>
+      <h3>Email</h3>
+      <p><a href="mailto:info@broadino.com">info&#64;broadino.com</a></p>
+    </div>
+  </div>
+</div>

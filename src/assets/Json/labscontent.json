@@ -36,7 +36,7 @@
   },
   {
     "key": "iot_lab",
-    "title": "Internet of Things (IoT) Lab",
+    "title": "Internet of Things (IoT)",
     "description": "Develop smart and connected solutions using sensors, microcontrollers, and IoT platforms.",
     "software": "Node-RED, Arduino IDE, ThingSpeak",
     "images": ["assets/img/product.jpg"]

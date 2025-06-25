@@ -1,0 +1,609 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.stem-main-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.stem-main-image img {
+  width: 98%;
+  height: 320px;
+  display: block;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+/* View PDF button styling */
+/* .view-pdf-btn {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 16px;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.view-pdf-btn:hover {
+  background-color: #005f8e;
+  cursor: pointer;
+} */
+
+.stem-intro {
+  max-width: 80%;
+  margin: 0 auto;
+  background: #e6f7ff;
+  padding: 30px;
+  /* border-left: 6px solid #0077b6; */
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.stem-intro h1 {
+  color: #023e8a;
+  margin-bottom: 16px;
+  font-size: 1.8em;
+  align-items: center;
+  text-align: center;
+}
+
+.stem-intro p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+.usp-specs {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f0f9ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.usp-specs h2 {
+  text-align: center;
+  color: #023e8a;
+  margin-bottom: 20px;
+}
+
+.usp-specs table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+
+.usp-specs th,
+.usp-specs td {
+  padding: 16px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+}
+
+.usp-specs th {
+  background-color: #caf0f8;
+  color: #023e8a;
+  font-weight: bold;
+  text-align: left;
+}
+
+.usp-specs tr:nth-child(even) {
+  background-color: #f9fdff;
+}
+
+@media (max-width: 768px) {
+  .usp-specs table,
+  .usp-specs thead,
+  .usp-specs tbody,
+  .usp-specs tr,
+  .usp-specs td {
+    display: block;
+    width: 100%;
+  }
+
+  .usp-specs th {
+    display: none;
+  }
+
+  .usp-specs td {
+    position: relative;
+    padding-left: 50%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .usp-specs td::before {
+    content: attr(data-label);
+    position: static;
+    top: 12px;
+    left: 16px;
+    width: 45%;
+    font-weight: bold;
+    color: #0077b6;
+    white-space: pre-wrap;
+  }
+
+  .usp-specs td:nth-of-type(1)::before {
+    content: "Unique Selling Proposition";
+  }
+
+  .usp-specs td:nth-of-type(2)::before {
+    content: "Specifications";
+  }
+}
+.why-stem {
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #f1f9ff;
+  /* border-left: 6px solid #0077b6; */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.why-stem h2 {
+  font-size: 1.6em;
+  color: #023e8a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.why-stem h2 span {
+  font-weight: normal;
+  color: #0077b6;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.why-stem ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.why-stem ul li {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+  line-height: 1.5;
+}
+.stem-pillars {
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.stem-pillars h2 {
+  font-size: 1.8em;
+  color: #023e8a;
+  margin-bottom: 20px;
+}
+
+.stem-pillars table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stem-pillars td {
+  padding: 20px;
+  vertical-align: top;
+}
+
+.stem-pillars td:hover{
+    background-color: #e0f7ff;
+    /* cursor: pointer; */
+
+}
+
+.stem-pillars img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.stem-pillars h3 {
+  font-size: 1.2em;
+  color: #0077b6;
+  margin-bottom: 8px;
+}
+
+.stem-pillars p {
+  font-size: 1em;
+  color: #333;
+}
+
+.stem-visual-demo {
+  max-width: 70%;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.stem-visual-demo p {
+  font-size: 1.1em;
+  margin: 8px 0;
+  color: #333;
+}
+
+.image-center img {
+  max-width: 60%;
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.stem-features {
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.stem-features h2 {
+  font-size: 1.8em;
+  color: #023e8a;
+  margin-bottom: 30px;
+}
+
+.stem-features h2 span {
+  font-weight: normal;
+  color: #0077b6;
+}
+
+.stem-features table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.stem-features td {
+  padding: 1px;
+  vertical-align: top;
+}
+
+.stem-features td:hover {
+  background-color: #e0f7ff;
+}
+
+.stem-features img {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.stem-features h3 {
+  font-size: 1.2em;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.stem-features p {
+  font-size: 1em;
+  color: #444;
+  line-height: 1.5;
+  text-align:center;
+}
+
+/* Optional Responsive Stack on Mobile */
+@media (max-width: 768px) {
+  .stem-features table,
+  .stem-features tbody,
+  .stem-features tr,
+  .stem-features td {
+    display: block;
+    width: 100%;
+  }
+
+  .stem-features td {
+    margin-bottom: 30px;
+  }
+}
+.learning-platform {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.learning-platform h2 {
+  font-size: 1.8em;
+  color: #023e8a;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.learning-platform h2 span {
+  font-weight: normal;
+  color: #0077b6;
+}
+
+.learning-platform table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.learning-platform td {
+  vertical-align: top;
+  padding: 20px;
+}
+
+.learning-platform .content h3 {
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.learning-platform .content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+.learning-platform .image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .learning-platform table,
+  .learning-platform tbody,
+  .learning-platform tr,
+  .learning-platform td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .learning-platform .image img {
+    margin-top: 20px;
+  }
+}
+.sustainability-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.sustainability-section h2 {
+  font-size: 1.8em;
+  color: #023e8a;
+  margin-bottom: 20px;
+}
+
+.sustainability-section h2 span {
+  color: #0077b6;
+  font-weight: normal;
+}
+
+.sustainability-text {
+  background-color: #e0f7fa;
+  /* border-left: 6px solid #0077b6; */
+  padding: 25px;
+  border-radius: 10px;
+  font-style: italic;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.sustainability-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+.monitoring-sustainability {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #f5faff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.monitoring-sustainability .column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.monitoring-sustainability h3 {
+  color: #023e8a;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0077b6;
+  padding-bottom: 5px;
+}
+
+.monitoring-sustainability ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  text-align: left;
+}
+
+.monitoring-sustainability ul li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.5;
+}
+.resources-section {
+  max-width: 80%;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #f1f9ff;
+  /* border-left: 6px solid #0077b6; */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.resources-section h2 {
+  font-size: 1.8em;
+  color: #023e8a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resources-section h2 span {
+  font-weight: normal;
+  color: #0077b6;
+}
+
+.resources-section .intro-text {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.resource-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+}
+
+.resource-list li {
+  margin-bottom: 12px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* 📱 Mobile and Tablet Responsive Design */
+@media (max-width: 991px) {
+  body {
+    padding: 10px;
+  }
+
+  .stem-main-image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .stem-intro,
+  .why-stem,
+  .usp-specs,
+  .stem-visual-demo,
+  .stem-pillars,
+  .stem-features,
+  .learning-platform,
+  .sustainability-section,
+  .resources-section {
+    max-width: 100%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .stem-pillars img,
+  .stem-features img {
+    width: 90% !important;
+    height: auto !important;
+    margin: 10px auto;
+  }
+
+  .stem-features td,
+  .stem-pillars td {
+    padding: 10px;
+    border: none;
+  }
+
+  .usp-specs td {
+    padding: 10px 5px;
+  }
+
+  .learning-platform td {
+    padding: 10px;
+  }
+
+  .learning-platform .image img {
+    max-width: 100%;
+  }
+
+  .monitoring-sustainability {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .monitoring-sustainability .column {
+    min-width: 100%;
+  }
+
+  .stem-intro h1,
+  .why-stem h2,
+  .usp-specs h2,
+  .stem-pillars h2,
+  .stem-features h2,
+  .learning-platform h2,
+  .sustainability-section h2,
+  .resources-section h2 {
+    font-size: 1.5em;
+  }
+
+  .stem-intro p,
+  .why-stem ul li,
+  .usp-specs td,
+  .stem-pillars p,
+  .stem-features p,
+  .learning-platform p,
+  .resources-section .intro-text,
+  .resource-list li {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .stem-features img,
+  .stem-pillars img {
+    width: 100% !important;
+  }
+
+  .stem-pillars h3,
+  .stem-features h3 {
+    font-size: 1.1em;
+  }
+
+  .stem-pillars p,
+  .stem-features p {
+    font-size: 0.95em;
+  }
+
+  .stem-intro,
+  .why-stem,
+  .stem-visual-demo,
+  .sustainability-section,
+  .resources-section {
+    padding: 15px 10px;
+  }
+
+  .usp-specs td::before {
+    font-size: 0.95em;
+  }
+
+  .monitoring-sustainability h3 {
+    font-size: 1.2em;
+  }
+}

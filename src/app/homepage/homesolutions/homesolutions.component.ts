@@ -24,7 +24,7 @@ export class HomesolutionsComponent {
     {
       key: 'innovative_manufacturing',
       title: 'Innovative Manufacturing',
-      src: 'assets/img/innovative1.jpg',
+      src: 'assets/img/inno_eng.jpg',
     },
     {
       key: 'product_innovation',

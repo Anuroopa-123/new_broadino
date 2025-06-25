@@ -90,3 +90,43 @@
 .close-button:hover {
     background: #cc0000;
 }
+
+/* Responsive: Tablet View */
+@media (max-width: 1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        gap: 15px;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .gallery-item img {
+        height: 220px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+}
+
+/* Responsive: Mobile View */
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+        gap: 12px;
+        padding: 10px;
+        max-width: 95%;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .modal-img-wrapper img {
+        max-height: 70vh;
+    }
+}

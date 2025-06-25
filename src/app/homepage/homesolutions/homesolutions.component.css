@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .container {
     padding: 40px 20px;
 }
@@ -165,7 +171,7 @@
     font-size: 1.4em;
     line-height: 1.5;
     color: #36486b;
-    text-align: justify;
+    text-align: left;
 }
 
 .lab-card {
@@ -231,7 +237,7 @@
 /* for discover page */
 
 .full-width-section {
-    width: 100vw;
+    /* width: 100vw; */
     background: linear-gradient(to right, #36486b, #1e3c72);
     padding: 90px 20px;
     color: #fff;
@@ -268,26 +274,36 @@
 }
 
 /* for background image */
-
 .hero-banner {
-    /* background-image: url('assets/img/Backgroundimg1.jpg'); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
+    /* width: 100vw; */
     height: 70vh;
-    justify-content: space-between;
-    width: 100vw;
+    overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    /* content to left */
-    padding-left: 8%;
-    /* adjust left spacing */
-    position: relative;
-    text-align: left;
+    /* padding-left: 8%; */
     color: white;
+    box-sizing: border-box;
 }
 
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+    margin-left: 8vw;
+    text-align: left;
+}
 
 .hero-banner::before {
     content: "";
@@ -328,9 +344,10 @@
     color: #011A41;
     padding: 14px 32px;
     font-weight: bold;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     text-decoration: none;
-    border: 2px solid #ffffff;
+    /* border: 2px solid #ffffff; */
+    border: none;
     overflow: hidden;
     transition: all 0.4s ease;
     z-index: 1;
@@ -346,6 +363,7 @@
     background-color: #011A41;
     z-index: -1;
     transition: left 0.4s ease;
+    border: none;
 }
 
 .hero-button:hover::before {
@@ -443,7 +461,7 @@
         background-size: cover;
     }
 
-    .hero-banner {
+    /* .hero-banner {
         height: auto;
         padding: 60px 20px;
         justify-content: center;
@@ -476,6 +494,26 @@
 
     .hero-gif img {
         max-width: 200px;
+    } */
+    .hero-banner {
+        height: auto;
+        padding: 60px 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
     }
 }
 

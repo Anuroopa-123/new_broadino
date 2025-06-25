@@ -49,7 +49,6 @@ export class MenulabsComponent implements OnInit, OnDestroy {
       }
 
       // Start auto-slide
-      this.startAutoSlide();
     });
   }
 
@@ -62,7 +61,6 @@ export class MenulabsComponent implements OnInit, OnDestroy {
     this.updateCurrentItem();
 
     // Reset auto-slide timer on manual selection
-    this.startAutoSlide();
   }
 
   updateCurrentItem(): void {
@@ -83,17 +81,6 @@ export class MenulabsComponent implements OnInit, OnDestroy {
     };
 
     // Refresh AOS animations on content change
-  }
-
-  startAutoSlide(): void {
-    if (this.autoSlideInterval) {
-      clearInterval(this.autoSlideInterval);
-    }
-
-    this.autoSlideInterval = setInterval(() => {
-      let nextIndex = (this.selectedLabIndex + 1) % this.labs.length;
-      this.selectLab(nextIndex);
-    }, 10000); // 10 seconds interval
   }
 
   nextSlide(): void {

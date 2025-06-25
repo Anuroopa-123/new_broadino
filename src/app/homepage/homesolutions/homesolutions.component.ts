@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 export interface Solution {
   key: string;
@@ -13,7 +13,7 @@ export interface Solution {
 @Component({
   selector: 'app-homesolutions',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './homesolutions.component.html',
   styleUrls: ['./homesolutions.component.css'],
 })

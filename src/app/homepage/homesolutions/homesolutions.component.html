@@ -1,4 +1,14 @@
 <!--about company-->
+<section
+  class="hero-banner"
+  style="background-image: url('assets/img/Backgroundimg1.jpg')"
+>
+  <div class="hero-content">
+    <h1>Broadino</h1>
+    <p>We help our clients drive growth through innovation</p>
+    <a [routerLink]="['/contact_us']" class="hero-button">Let’s Talk</a>
+  </div>
+</section>
 
 <div class="about-section my-5">
   <div
@@ -8,15 +18,19 @@
   <div class="about-text">
     <!-- <h2><b>About Broadino</b></h2> -->
     <p>
-      Broadino is a forward-thinking technology company specializing in advanced manufacturing solutions driven by Industry
-      4.0 / 5.0. By integrating cutting-edge technologies such as artificial intelligence, Internet of Things (IoT egde devices), PLM, Product Innovation,
-      Smart factory automation,AR/VR/MR,  Cloud computing, and Data analytics, Broadino helps industries transition into smart, efficient, and
-      connected ecosystems by offering high quality trained resources, Research & Development, product creation and
-      servicing our clients I4.0 related issues.
-    
-      Our mission is to empower manufacturers with intelligent systems that boost productivity, facilitate real-time
-      decision-making, and foster innovation across the entire value chain. At Broadino, we are dedicated to shaping the
-      future of manufacturing through automation, digital transformation, and sustainable industrial growth.
+      Broadino is a forward-thinking technology company specializing in advanced
+      manufacturing solutions driven by Industry 4.0 / 5.0. By integrating
+      cutting-edge technologies such as artificial intelligence, Internet of
+      Things (IoT egde devices), PLM, Product Innovation, Smart factory
+      automation,AR/VR/MR, Cloud computing, and Data analytics, Broadino helps
+      industries transition into smart, efficient, and connected ecosystems by
+      offering high quality trained resources, Research & Development, product
+      creation and servicing our clients I4.0 related issues. Our mission is to
+      empower manufacturers with intelligent systems that boost productivity,
+      facilitate real-time decision-making, and foster innovation across the
+      entire value chain. At Broadino, we are dedicated to shaping the future of
+      manufacturing through automation, digital transformation, and sustainable
+      industrial growth.
     </p>
   </div>
 </div>
@@ -36,10 +50,7 @@
         >
           <div class="overlay">
             <h5 class="card-title">{{ lab.title }}</h5>
-            <button
-              class="btn take-over"
-              (click)="onTakeOverClick(lab.key)"
-            >
+            <button class="btn take-over" (click)="onTakeOverClick(lab.key)">
               Further Details <i class="fa fa-arrow-right arrow-icon"></i>
             </button>
           </div>
@@ -49,6 +60,18 @@
   </div>
 </div>
 
+<div class="full-width-section">
+  <div class="content-wrapper">
+    <h2 class="text-center">
+      We create businesses that move people and planet forward.
+    </h2>
+    <div class="bmi-btn--wrapper mt-4 text-center">
+      <a [routerLink]="['/aboutus']" class="bmi-btn borderWhite">
+        Discover more about us
+      </a>
+    </div>
+  </div>
+</div>
 <!-- Why Broadino Section -->
 <div class="container text-center my-5">
   <h2 class="mb-4">Why Choose Broadino?</h2>

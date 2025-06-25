@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { LabscontentComponent } from './labscontent/labscontent.component';
+// import { LabscontentComponent } from './labscontent/labscontent.component';
 import { MenulabsComponent } from './menulabs/menulabs.component';
 import { ContactComponent } from './contact/contact.component';
 import { MediapageComponent } from './mediapage/mediapage.component';

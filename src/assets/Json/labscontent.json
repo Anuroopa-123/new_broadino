@@ -2,56 +2,56 @@
   {
     "key": "innovative_manufacturing",
     "title": "Innovative Manufacturing",
-    "description": "This lab focuses on developing advanced, smart manufacturing solutions for modern industries using digital technologies.",
-    "software": "SolidWorks, AutoCAD, Siemens NX",
+    "description": "Reimagining Production Through Smart Manufacturing Technologies: The Innovative Manufacturing Center at TANSAM is a future-ready platform for digital manufacturing, bridging design and production through advanced tools and technologies. Backed by Siemens’ world-class software and cutting-edge equipment, we enable industries and innovators to realize complex components, recreate legacy parts, and optimize manufacturing workflows. We specialize in integrating digital tools with physical processes to streamline production, enhance precision, and accelerate innovation. Our Core Solutions - Reverse Engineering: Rebuild. Redesign. Recreate. Using the Calibry Handheld 3D Scanner, we transform physical objects into detailed digital models,unlocking new possibilities in repair, redesign, and innovation: High-precision 3D scanning of complex geometries, Digital reconstruction of legacy or worn components, Parametric modeling using Siemens NX and Solid Edge &amp; Rapid design updates and manufacturing integration. From heritage components to performance-critical parts, our reverse engineering solutions reduce downtime and extend product life cycles. 3D Metal Printing: Shape the future with Additive Manufacturing. Leverage the power of Markforged Metal 3D Printing to produce strong, lightweight, and high-performance parts with unprecedented speed: Print end-use metal parts with industrial-grade strength, Rapid prototyping, tooling, and low-volume production, Complex internal geometries and lightweight structures &amp; Seamless CAD-to-print workflow via Siemens platforms. Our 3D printing solutions reduce lead times, material waste, and supply chain complexity – perfect for aerospace, automotive, tooling, and more.",
+    "software": "Siemens NX and Solid Edge",
     "images": ["assets/img/innovative1.jpg"]
   },
   {
     "key": "product_innovation",
     "title": "Product Innovation",
-    "description": "This lab helps transform creative ideas into viable products through research, design, and rapid prototyping.",
-    "software": "Fusion 360, Rhino 3D",
+    "description": "Empowering Next-Gen Product Design &amp; Innovation: At the heart of the TANSAM – Industry 4.0 Center of Excellence lies the Product Innovation Center, a cutting-edge facility dedicated to driving innovation in product development and engineering. Powered by world-class Siemens technology, the center is a hub for creativity, digital transformation, and precision engineering. We specialize in supporting industries, startups, and academia through advanced tools and expert guidance to bring ideas to life with speed, efficiency, and excellence. Our Core Solutions: New Product Development (NPD) - Transform ideas into tangible, manufacturable products with our end-to-end NPD services: Concept development and feasibility analysis, Detailed 3D modeling and CAD design, Functional prototyping and validation and Industry-compliant documentation and support. Whether you are redesigning a simple component or a complex system, we provide the tools and expertise to accelerate your time-to-market. Design Optimization: Enhance the performance, efficiency, and manufacturability of your products with our intelligent design optimization services: Weight and material reduction, Stress analysis and simulation, Cost-effective design alternatives &amp; Ergonomics and aesthetic refinement. Our goal is to deliver designs that are not only innovative but also smarter, leaner, and production-ready. ",
+    "software": "Siemens NX and Solid Edge",
     "images": ["assets/img/Productinnovation.jpg"]
   },
   {
     "key": "arvrmr_research",
     "title": "AR | VR | MR Research",
-    "description": "Explore Augmented, Virtual, and Mixed Reality technologies and their applications across various industries.",
-    "software": "Unity, Unreal Engine, Blender",
+    "description": "The AR/VR/MR Research Lab is dedicated to pioneering immersive technologies that redefine how we train, learn, and interact with digital content. Our primary focus is on developing high-impact Virtual Reality (VR) simulations and training systems, while also exploring Augmented Reality (AR) and Mixed Reality (MR) to enhance real-world workflows and educational experiences.By blending cutting-edge 3D environments, intelligent interaction design, and real-time responsiveness, we create powerful immersive applications for industries including education, healthcare, manufacturing, and defence. Our goal is to provide scalable, repeatable, and measurable solutions that drive performance and reduce risk in real-world tasks.",
+    "software":  "We use Unity for real-time 3D XR development, Blender for 3D asset creation and animation, Vuforia for marker-based AR tracking, AR Core for Android AR development, and XR Interaction Toolkit for robust VR and MR interactions in Unity.",
     "images": ["assets/img/arvr.jpg"]
   },
   {
-    "key": "ai_strategy_consulting",
-    "title": "AI Strategy Consulting",
-    "description": "This lab offers consulting services for organizations to integrate Artificial Intelligence into their workflows.",
-    "software": "Python, TensorFlow, Keras",
+    "key": "Asset_Performance",
+    "title": "Research Centre For Asset Performance",
+    "description": "The Center for Predictive Engineering Analytics (CPEA) Lab specializes in digital twin development and advanced engineering simulations to enhance product design, reduce prototyping costs, and accelerate innovation. By integrating technologies like FEA, CFD, MBD, and thermal-structural analysis, the lab provides predictive insights across automotive, aerospace, energy, and manufacturing sectors. CPEA collaborates with industries, researchers, and academic institutions to solve real-world engineering challenges through simulation-driven solutions.",
+    "software":"Simcenter 3D, STAR-CCM+, NX Nastran, LMS Virtual Lab, Simcenter Amesim, FloEFD",
     "images": ["assets/img/AiStrategy.jpg"]
   },
   {
     "key": "research_centre_for_plm",
     "title": "Research Centre for PLM",
-    "description": "Dedicated to Product Lifecycle Management, this lab helps industries improve design-to-delivery timelines.",
-    "software": "Teamcenter, Windchill",
+    "description": "Connecting Innovation Across the Entire Product Lifecycle: The Research Center for Product Lifecycle Management (PLM) at TANSAM is a strategic hub designed to transform how products are conceived, developed, and managed across their entire life span. Powered by Siemens Teamcenter, the world’s leading PLM software, this center helps organizations achieve digital continuity, improve collaboration, and drive innovation at every stage of the product journey. We provide the expertise, tools, and infrastructure needed to implement robust, future-ready PLM strategies across industries. Our Core Solutions - PLM Engineering Services: Streamline complex product data and processes across global teams - Centralized management of product data and revisions, BOM (Bill of Materials) creation, tracking, and control, Workflow automation for engineering change management, Integration with leading CAD platforms (NX, Solid Edge, etc.). Product Requirements Engineering: Ensure product success from the start by aligning design and development with customer and regulatory needs - Define, capture, and manage complex product requirements, Track traceability across the development lifecycle, Ensure compliance and reduce late-stage design changes. Model- Based Systems Engineering (MBSE): Enable smarter design and integration of complex systems through a model-driven approach - System-level architecture modeling and simulation, Multi- domain collaboration across mechanical, electrical, and software teams, Early validation of functional performance and system interactions.",
+    "software": "Siemens Teamcenter",
     "images": ["assets/img/Plmimg3.jpg"]
   },
   {
     "key": "iot_lab",
     "title": "Internet of Things (IoT)",
-    "description": "Develop smart and connected solutions using sensors, microcontrollers, and IoT platforms.",
+    "description": "We empower smart innovation through connected devices and intelligent systems. By integrating sensors, microcontrollers, and IoT platforms, we help industries develop real-time monitoring and automation solutions that are scalable and cost-effective. Whether it's environmental sensing, smart agriculture, industrial monitoring, or home automation, our IoT ecosystem accelerates digital transformation with practical, hands-on innovation.",
     "software": "Node-RED, Arduino IDE, ThingSpeak",
     "images": ["assets/img/product.jpg"]
   },
   {
     "key": "predictive_engineering",
     "title": "Predictive Engineering",
-    "description": "Utilize simulation and data analytics to predict product performance and failure points.",
-    "software": "ANSYS, MATLAB, Simulink",
+    "description": "Simulate. Analyze. Predict. Perfect: The Predictive Engineering Center at TANSAM is designed to empower industries, researchers, and product developers with cutting-edge simulation technologies that enable smarter design decisions and reduce physical prototyping costs. Through high-fidelity virtual testing and multiphysics simulation, we help predict product performance under real-world conditions—before a single part is manufactured. With powerful Siemens simulation tools and deep domain expertise, we accelerate innovation, ensure reliability, and optimize product designs from concept to launch. Our Core Simulation Solutions - Finite Element Analysis (FEA): Simulate structural behavior under load, pressure, and stress, Identify weaknesses, optimize material usage, and ensure durability, Support for linear, nonlinear, thermal, and fatigue analyses. Computational Fluid Dynamics (CFD): Analyze fluid flow, heat transfer, and thermal management, Optimize aerodynamics, cooling systems, and fluid-structure interactions, Tackle complex multiphase and turbulent flow scenarios. Multi-Body Dynamics (MBD): Simulate real-time motion of mechanical assemblies, Analyze kinematics, dynamic loads, and control interactions, Evaluate systems like suspension, robotics, and machinery with precision.",
+    "software":"Simcenter 3D &amp; Simcenter StarCCM+",
     "images": ["assets/img/predictive_engineering.jpg"]
   },
   {
     "key": "reverse_engineering",
     "title": "Reverse Engineering",
-    "description": "Analyze and reconstruct existing physical products to create accurate digital models.",
+    "description": "Our Reverse Engineering solutions at Broadino focus on converting physical products into accurate digital models for redesign, analysis, and reproduction. We work with high-precision 3D scanning and modeling tools to recreate legacy components, optimize existing designs, and enable cost-effective repairs. Ideal for industries dealing with obsolete parts, product improvements, or design replication.",
     "software": "Geomagic Design X, PolyWorks",
     "images": ["assets/img/ReverseEngineering.jpg"]
   }

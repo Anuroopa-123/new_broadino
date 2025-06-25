@@ -37,8 +37,8 @@ export class HomesolutionsComponent {
       src: 'assets/img/arvr.jpg',
     },
     {
-      key: 'ai_strategy_consulting',
-      title: 'AI Strategy Consulting',
+      key: 'Asset_Performance',
+      title: 'Research Centre For Asset Performance',
       src: 'assets/img/AiStrategy.jpg',
     },
     {

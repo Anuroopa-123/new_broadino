@@ -153,7 +153,7 @@ ul {
     text-align: justify;
     display: flex;
     align-items: center;
-    font-family: "Ubuntu", serif;
+    font-family: "Faculty Glyphic", serif;
 }
 
 .software {
@@ -324,6 +324,6 @@ ul {
     }
 }
 
-.colour_1{
+.colour_1 {
     color: #009999;
 }

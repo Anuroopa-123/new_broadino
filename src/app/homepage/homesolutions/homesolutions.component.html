@@ -48,11 +48,20 @@
           class="card-image"
           [style.backgroundImage]="'url(' + lab.src + ')'"
         >
+          <div class="triangle-overlay"></div>
           <div class="overlay">
             <h5 class="card-title">{{ lab.title }}</h5>
-            <button class="btn take-over" (click)="onTakeOverClick(lab.key)">
-              Further Details <i class="fa fa-arrow-right arrow-icon"></i>
-            </button>
+            <a class="card custom-card h-100" [routerLink]="['/labs', lab.key]">
+              <div
+                class="card-image"
+                [style.backgroundImage]="'url(' + lab.src + ')'"
+              >
+                <div class="triangle-overlay"></div>
+                <div class="overlay">
+                  <h5 class="card-title">{{ lab.title }}</h5>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -74,7 +83,8 @@
 </div>
 <!-- Why Broadino Section -->
 <div class="container text-center my-5">
-  <h2 class="mb-4">Why Choose Broadino?</h2>
+  <h2 class="section-title mb-4">Why Choose Broadino?</h2>
+
   <div class="row">
     <div class="col-md-4" data-aos="zoom-in">
       <img src="assets/img/Aiimg.jpg" class="img-fluid mb-3" alt="AI" />
@@ -101,15 +111,15 @@
 <!-- Technology Stack Section -->
 <!-- <p class="tech-heading text-center mt-5">Our Technology Stack</p>
 
-<div
-  class="tech-stack-container d-flex flex-wrap justify-content-center gap-4 mt-4 px-3 px-md-5"
->
   <div
-    class="tech-item"
-    *ngFor="let tech of techStack"
-    data-aos="zoom-in"
-    data-aos-duration="800"
+    class="tech-stack-container d-flex flex-wrap justify-content-center gap-4 mt-4 px-3 px-md-5"
   >
-    <img [src]="tech" class="tech-logo" alt="Technology Logo" />
-  </div>
-</div> -->
+    <div
+      class="tech-item"
+      *ngFor="let tech of techStack"
+      data-aos="zoom-in"
+      data-aos-duration="800"
+    >
+      <img [src]="tech" class="tech-logo" alt="Technology Logo" />
+    </div>
+  </div> -->

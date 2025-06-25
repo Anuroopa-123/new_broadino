@@ -6,52 +6,102 @@
     color: #36486b;
 }
 
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #36486b;
+}
+
 
 .custom-card {
-    border: none;
-    overflow: hidden;
-    border-radius: 12px;
-    height: 100%;
-    position: relative;
-    background-color: #fef3e7;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
-.card-image {
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-}
 
 .custom-card:hover .card-image {
     transform: scale(1.02);
 }
 
+.card-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    overflow: hidden;
+}
+
+/* Base overlay visible always (orange tint) */
+.card-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    opacity: 0.5;
+    /* Adjust to taste */
+    z-index: 1;
+}
+
+.triangle-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 190%;
+    /* increased height to make the gradient bigger */
+    background: linear-gradient(to top right, rgba(248, 195, 22, 0.95), rgba(233, 119, 2, 0.95));
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+.custom-card:hover .triangle-overlay {
+    transform: translateY(0);
+
+}
+
+
+/* Overlay content always visible on top of base color and triangle */
 .overlay {
     position: absolute;
-    bottom: -100%;
+    bottom: 20px;
+    /* add some padding from bottom */
     left: 0;
     right: 0;
-    background: #a2a5a3;
-    color: #fff;
-    padding: 20px;
+    padding: 0 20px;
+    color: white;
     text-align: center;
-    transition: bottom 0.3s ease-in-out;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.custom-card:hover .overlay {
-    bottom: 0;
-}
 
+
+/* Button styling */
 .take-over {
-    margin-top: 10px;
     font-weight: bold;
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
     transition: all 0.3s ease;
+    justify-content: center;
+}
+
+.take-over:hover {
+    background: white;
+    color: #e97702;
 }
 
 .arrow-icon {
@@ -61,6 +111,14 @@
 .take-over:hover .arrow-icon {
     transform: translateX(5px);
 }
+
+/* Card hover scale and shadow */
+.custom-card:hover {
+    box-shadow: 0 8px 20px rgba(233, 119, 2, 0.3);
+    transform: scale(1.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 /* About Section */
 .about-section {
@@ -107,6 +165,7 @@
     font-size: 1.4em;
     line-height: 1.5;
     color: #36486b;
+    text-align: justify;
 }
 
 .lab-card {
@@ -215,13 +274,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 70vh;
+    justify-content: space-between;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     /* content to left */
-    padding-left: 5%;
+    padding-left: 8%;
     /* adjust left spacing */
     position: relative;
     text-align: left;
@@ -297,6 +357,78 @@
     border-color: #011A41;
 }
 
+.hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    /* Important for mobile layout */
+    z-index: 2;
+    position: relative;
+    padding: 20px 8vw;
+}
+
+.hero-gif {
+    flex: 1;
+    text-align: right;
+    padding: 20px;
+}
+
+.hero-gif img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Simple animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content h1,
+.hero-content p,
+.hero-button {
+    opacity: 0;
+    animation: slideFromTop 0.8s ease-out forwards;
+}
+
+/* Delay the animations for staggered effect */
+.hero-content h1 {
+    animation-delay: 0.3s;
+}
+
+.hero-content p {
+    animation-delay: 0.5s;
+}
+
+.hero-button {
+    animation-delay: 0.7s;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-section {
@@ -329,6 +461,21 @@
 
     .hero-content p {
         font-size: 1.2rem;
+    }
+
+    .hero-content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-gif {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .hero-gif img {
+        max-width: 200px;
     }
 }
 

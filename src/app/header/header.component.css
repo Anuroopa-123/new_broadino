@@ -953,3 +953,53 @@
     font-family: "Red Rose", serif;
     text-transform: uppercase;
 }
+
+.logosection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.imagesection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.imagesection img {
+    max-width: 120px;
+    height: auto;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.title .title-top {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.title .title-bottom {
+    font-size: 14px;
+}
+
+.nav-list {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    width: auto;
+}
+
+.hamburger {
+    display: none;
+    /* hide hamburger on desktop */
+}

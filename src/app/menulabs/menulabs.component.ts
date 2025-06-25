@@ -22,17 +22,33 @@ export class MenulabsComponent implements OnInit, OnDestroy {
     private router: Router
   ) {}
 
+  // ngOnInit() {
+
+  //   this.http.get<any[]>('assets/Json/labscontent.json').subscribe((data) => {
+  //     this.labs = data;
+
+  //     this.selectLab(0);
+
+  //     this.startAutoSlide();
+  //   });
+  // }
   ngOnInit() {
-    // Load labs data from JSON
+    // Load labs JSON
     this.http.get<any[]>('assets/Json/labscontent.json').subscribe((data) => {
       this.labs = data;
 
-      // Select the first lab by default
-      this.selectLab(0);
+      // Get the `labKey` from the URL
+      const labKeyFromUrl = this.route.snapshot.paramMap.get('labKey');
 
-      // Initialize AOS animations
+      // If a labKey is in URL, find matching lab and select it
+      if (labKeyFromUrl) {
+        const index = this.labs.findIndex((lab) => lab.key === labKeyFromUrl);
+        this.selectLab(index !== -1 ? index : 0); // fallback to 0
+      } else {
+        this.selectLab(0);
+      }
 
-      // Start auto-sliding between labs every 10 seconds
+      // Start auto-slide
       this.startAutoSlide();
     });
   }

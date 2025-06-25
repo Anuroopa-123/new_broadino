@@ -9,7 +9,7 @@ import { MediapageComponent } from './mediapage/mediapage.component';
 export const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'aboutus', component: AboutusComponent },
-  { path: 'labs/:key', component: MenulabsComponent },
+  { path: 'labs/:labKey', component: MenulabsComponent },
   { path: 'contact_us', component: ContactComponent },
   { path: 'labs', component: MenulabsComponent },
   { path: 'media', component: MediapageComponent },

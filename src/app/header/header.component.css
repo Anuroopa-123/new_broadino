@@ -14,6 +14,8 @@
     flex-wrap: wrap;
 }
 
+
+
 /* Social Media Icons */
 .socialmedia {
     display: flex;
@@ -510,7 +512,6 @@
     /* Change text and icon color on hover */
 }
 
-
 /* HAMBURGER MENU (FOR MOBILE) */
 .hamburger {
     display: none;
@@ -732,6 +733,7 @@
     .navbar {
         flex-direction: column;
         padding: 5px;
+        position: relative;
     }
 
     .nav-list {
@@ -740,14 +742,15 @@
         top: 60px;
         left: 0;
         width: 100%;
-        background: #009999;
+        background: #36486b;
         display: none;
         padding: 10px 0;
+        z-index: 999;
     }
 
     .nav-list.active {
         display: flex;
-        margin: 0;
+
     }
 
     .dropdown-menu {
@@ -759,6 +762,12 @@
 
     .hamburger {
         display: block;
+        left: 20px;
+        z-index: 1000;
+        cursor: pointer;
+        top: 20px;
+
+
     }
 
     /* Overlay Panel - Full screen on mobile */
@@ -954,7 +963,7 @@
     text-transform: uppercase;
 }
 
-
+/* 
 
 .nav-list {
     display: flex !important;
@@ -962,9 +971,12 @@
     flex-direction: row;
     background: transparent;
     width: auto;
-}
+} */
 
-.hamburger {
+/* hide hamburger on desktop */
+/* .hamburger {
     display: none;
-    /* hide hamburger on desktop */
-}
+    font-size: 28px;
+    cursor: pointer;
+    
+} */

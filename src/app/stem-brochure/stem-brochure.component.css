@@ -16,8 +16,8 @@ body {
 }
 
 .stem-main-image img {
-  width: 98%;
-  height: 320px;
+  width: 45%;
+  height: 260px;
   display: block;
   border-radius: 8px;
   margin-top: 5px;
@@ -54,13 +54,14 @@ body {
   margin-top: 20px;
 }
 
-.helight{
-    color: #0077b6;
-    font-weight: bold;
-    font-size: 1.3em;
-    font-style: italic;
-    /* text-decoration: underline; */
+.helight {
+  color: #0077b6;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-style: italic;
+  /* text-decoration: underline; */
 }
+
 .stem-intro h1 {
   color: #023e8a;
   margin-bottom: 16px;
@@ -73,6 +74,7 @@ body {
   font-size: 1.1em;
   line-height: 1.6;
 }
+
 .usp-specs {
   max-width: 1000px;
   margin: 40px auto;
@@ -113,6 +115,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .usp-specs table,
   .usp-specs thead,
   .usp-specs tbody,
@@ -153,6 +156,7 @@ body {
     content: "Specifications";
   }
 }
+
 .why-stem {
   max-width: 90%;
   margin: 40px auto;
@@ -187,6 +191,7 @@ body {
   font-size: 1.05em;
   line-height: 1.5;
 }
+
 .stem-pillars {
   max-width: 1000px;
   margin: 40px auto;
@@ -210,9 +215,9 @@ body {
   vertical-align: top;
 }
 
-.stem-pillars td:hover{
-    background-color: #e0f7ff;
-    /* cursor: pointer; */
+.stem-pillars td:hover {
+  background-color: #e0f7ff;
+  /* cursor: pointer; */
 
 }
 
@@ -253,8 +258,9 @@ body {
   height: auto;
   margin: 20px auto;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .stem-features {
   max-width: 80%;
   margin: auto;
@@ -305,11 +311,12 @@ body {
   font-size: 1em;
   color: #444;
   line-height: 1.5;
-  text-align:center;
+  text-align: center;
 }
 
 /* Optional Responsive Stack on Mobile */
 @media (max-width: 768px) {
+
   .stem-features table,
   .stem-features tbody,
   .stem-features tr,
@@ -322,6 +329,7 @@ body {
     margin-bottom: 30px;
   }
 }
+
 .learning-platform {
   max-width: 1000px;
   margin: 40px auto;
@@ -373,6 +381,7 @@ body {
 
 /* Responsive for mobile */
 @media (max-width: 768px) {
+
   .learning-platform table,
   .learning-platform tbody,
   .learning-platform tr,
@@ -386,6 +395,7 @@ body {
     margin-top: 20px;
   }
 }
+
 .sustainability-section {
   max-width: 900px;
   margin: 40px auto;
@@ -411,13 +421,14 @@ body {
   border-radius: 10px;
   font-style: italic;
   color: #333;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .sustainability-text p {
   font-size: 1.1em;
   line-height: 1.6;
 }
+
 .monitoring-sustainability {
   display: flex;
   justify-content: space-between;
@@ -456,6 +467,7 @@ body {
   color: #333;
   line-height: 1.5;
 }
+
 .resources-section {
   max-width: 80%;
   margin: 40px auto;
@@ -463,7 +475,7 @@ body {
   background-color: #f1f9ff;
   /* border-left: 6px solid #0077b6; */
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .resources-section h2 {
@@ -583,6 +595,7 @@ body {
 }
 
 @media (max-width: 576px) {
+
   .stem-features img,
   .stem-pillars img {
     width: 100% !important;

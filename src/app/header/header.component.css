@@ -732,7 +732,7 @@
     /* Navigation - Full-width dropdown on smaller screens */
     .navbar {
         flex-direction: column;
-        padding: 5px;
+        padding-top: 50px;
         position: relative;
     }
 
@@ -746,6 +746,7 @@
         display: none;
         padding: 10px 0;
         z-index: 999;
+        transition: max-height 0.3s ease-out;
     }
 
     .nav-list.active {
@@ -760,14 +761,57 @@
         background: rgba(255, 255, 255, 0.9);
     }
 
+
+    .navbar {
+        position: relative;
+    }
+
     .hamburger {
         display: block;
-        left: 20px;
-        z-index: 1000;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        z-index: 1001;
+        font-size: 28px;
+        color: white;
         cursor: pointer;
-        top: 20px;
+    }
 
+    ::ng-deep .hamburger.close-icon {
+        color: red !important;
+    }
 
+    /* Dropdown starts hidden and slides down */
+    .nav-list {
+        position: absolute;
+        top: 100%;
+        /* Directly below the navbar */
+        left: 0;
+        width: 100%;
+        background-color: #36486b;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.3s ease;
+        z-index: 1000;
+    }
+
+    /* When hamburger is clicked */
+    .nav-list.active {
+        max-height: 500px;
+        /* or enough to show all items */
+        opacity: 1;
+    }
+
+    .nav-list li {
+        padding: 10px 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-list li a {
+        color: white;
+        text-decoration: none;
+        display: block;
     }
 
     /* Overlay Panel - Full screen on mobile */
@@ -807,6 +851,10 @@
     .rightsideframe i {
         font-size: 20px;
     }
+
+
+
+
 }
 
 
@@ -854,6 +902,8 @@
         font-size: 14px;
         padding: 8px;
     }
+
+
 
     .scrollingnotif {
         display: flex;
@@ -962,6 +1012,8 @@
     font-family: "Red Rose", serif;
     text-transform: uppercase;
 }
+
+
 
 /* 
 

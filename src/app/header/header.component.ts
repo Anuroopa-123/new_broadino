@@ -24,13 +24,11 @@ export class HeaderComponent {
 
   ngOnInit() {
     if (typeof window !== 'undefined') {
-      // Access DOM elements only in the browser
       this.panel = document.getElementById('overlayPanel');
       this.frame = document.getElementById('rightsideframe');
       this.icon = document.getElementById('toggleIcon');
-      this.body = document.body as HTMLBodyElement; // Type assertion
+      this.body = document.body as HTMLBodyElement;
 
-      // Check if the elements exist
       if (this.panel && this.frame && this.icon && this.body) {
         this.addEventListeners();
       }
@@ -38,7 +36,6 @@ export class HeaderComponent {
     this.http.get<any[]>('assets/Json/labscontent.json').subscribe(
       (data) => {
         this.labs = data;
-        // console.log("Labs Data:", this.labs);
       },
       (error) => {
         console.error('Error fetching labs data:', error);
@@ -92,7 +89,6 @@ export class HeaderComponent {
       const isVisible = overlayPanel.classList.contains('visible');
 
       if (isVisible) {
-        // Hide the panel
         overlayPanel.classList.remove('visible');
         dullOverlay.classList.remove('visible');
         rightSideFrame.classList.remove('open');
@@ -132,6 +128,6 @@ export class HeaderComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    this.isScrolled = scrollPosition > 200; // Change navbar after 200px
+    this.isScrolled = scrollPosition > 200;
   }
 }

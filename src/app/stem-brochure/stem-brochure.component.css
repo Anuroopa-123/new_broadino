@@ -16,7 +16,7 @@ body {
 }
 
 .stem-main-image img {
-  width: 45%;
+  width: 53%;
   height: 260px;
   display: block;
   border-radius: 8px;
@@ -45,7 +45,7 @@ body {
 } */
 
 .stem-intro {
-  max-width: 80%;
+  max-width: 53%;
   margin: 0 auto;
   background: #e6f7ff;
   padding: 30px;
@@ -158,7 +158,7 @@ body {
 }
 
 .why-stem {
-  max-width: 90%;
+  max-width: 54%;
   margin: 40px auto;
   padding: 25px 30px;
   background-color: #f1f9ff;
@@ -193,8 +193,8 @@ body {
 }
 
 .stem-pillars {
-  max-width: 1000px;
-  margin: 40px auto;
+  max-width: 1025px;
+  margin: 20px auto;
   text-align: center;
   padding: 20px;
 }
@@ -240,7 +240,7 @@ body {
 }
 
 .stem-visual-demo {
-  max-width: 70%;
+  max-width: 60%;
   margin: 50px auto;
   text-align: center;
   padding: 20px;
@@ -262,7 +262,7 @@ body {
 }
 
 .stem-features {
-  max-width: 80%;
+  max-width: 65%;
   margin: auto;
   padding: 20px;
   text-align: center;
@@ -397,7 +397,7 @@ body {
 }
 
 .sustainability-section {
-  max-width: 900px;
+  max-width: 1035px;
   margin: 40px auto;
   padding: 20px;
   text-align: center;
@@ -469,7 +469,7 @@ body {
 }
 
 .resources-section {
-  max-width: 80%;
+  max-width: 54%;
   margin: 40px auto;
   padding: 25px;
   background-color: #f1f9ff;

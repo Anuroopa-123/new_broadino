@@ -88,22 +88,27 @@
     (click)="toggleMenu()"
     [ngClass]="{ 'close-icon': isMenuOpen }"
   >
-    {{ isMenuOpen ? "✖" : "☰" }}
+    {{ isMenuOpen ? "X" : "☰" }}
   </div>
 
   <ul class="nav-list" [ngClass]="{ active: isMenuOpen }">
-    <li class="active"><a href="#">Home</a></li>
+    <li class="active"><a href="#" (click)="closeMenu()">Home</a></li>
     <li class="active">
-      <a [routerLink]="['/aboutus']" routerLinkActive="active">About Us</a>
+      <a
+        [routerLink]="['/aboutus']"
+        routerLinkActive="active"
+        (click)="closeMenu()"
+        >About Us</a
+      >
     </li>
     <li class="active">
-      <a [routerLink]="['/labs', labs[0]?.key]">Labs</a>
+      <a [routerLink]="['/labs', labs[0]?.key]" (click)="closeMenu()">Labs</a>
     </li>
     <li class="active">
-      <a [routerLink]="['/stem']">STEM</a>
+      <a [routerLink]="['/stem']" (click)="closeMenu()">STEM</a>
     </li>
     <li class="active">
-      <a [routerLink]="['/media']">Media</a>
+      <a [routerLink]="['/media']" (click)="closeMenu()">Media</a>
     </li>
 
     <!-- Technical Capabilities -->
@@ -209,7 +214,9 @@
     </li> -->
     <!-- <li class="active"><a [routerLink]="['Brochure']">Brochures</a></li> -->
     <!-- <li class="active"><a [routerLink]="['']">Achievement</a></li> -->
-    <li class="active"><a [routerLink]="['contact_us']">Contact</a></li>
+    <li class="active">
+      <a [routerLink]="['contact_us']" (click)="closeMenu()">Contact</a>
+    </li>
   </ul>
 </nav>
 

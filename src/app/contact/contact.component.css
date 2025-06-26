@@ -214,7 +214,7 @@ button:active {
     color: #36486b;
 }
 
-.card p a{
+.card p a {
     color: #36486b;
     text-decoration: none;
 }
@@ -257,11 +257,14 @@ textarea::-webkit-scrollbar-track {
     .contact-wrapper,
     .map-container {
         width: 100%;
+
     }
 
     .map-container {
         height: 350px;
     }
+
+
 }
 
 @media (max-width: 768px) {
@@ -291,4 +294,10 @@ textarea::-webkit-scrollbar-track {
     .card {
         width: 100%;
     }
+
+    .contact-wrapper {
+        backdrop-filter: blur(3px) !important;
+        background: rgba(255, 255, 255, 0.15);
+    }
+
 }

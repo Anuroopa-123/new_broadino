@@ -310,10 +310,10 @@
     }
 
     /* Change color when menu is open (for ✖) */
-    .hamburger.close-icon {
+    /* .hamburger.close-icon {
         color: red !important;
-        /* Red color for ✖ */
-    }
+    
+    } */
 
     .dropdown-menu {
         display: none;

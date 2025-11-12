@@ -276,15 +276,40 @@ html, body {
 /* for background image */
 .hero-banner {
     position: relative;
-    /* width: 100vw; */
     height: 70vh;
-    overflow: hidden;
     display: flex;
     align-items: center;
-    /* padding-left: 8%; */
+
     color: white;
     box-sizing: border-box;
+
+    /* Background image */
+     background-image: url('../../../assets/img/hero-background.jpg');
+    background-size: cover;       /* Cover the entire section */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;
 }
+
+.hero-content {
+    text-align: center;
+    z-index: 2;                   /* Ensure it's above background */
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    background-color: #00ffff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #00bcd4;
+}
+
 
 .hero-video {
     position: absolute;

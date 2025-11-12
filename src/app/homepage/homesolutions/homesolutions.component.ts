@@ -77,7 +77,7 @@ export class HomesolutionsComponent {
   ];
 
   firstRowLabs = this.labs.slice(0, 4);
-  secondRowLabs = this.labs.slice(4, 8);
+  secondRowLabs = this.labs.slice(5, 8);
 
   constructor(private router: Router) {}
 

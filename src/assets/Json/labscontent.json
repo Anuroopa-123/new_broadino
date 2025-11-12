@@ -54,5 +54,19 @@
     "description": "Our Reverse Engineering solutions at Broadino focus on converting physical products into accurate digital models for redesign, analysis, and reproduction. We work with high-precision 3D scanning and modeling tools to recreate legacy components, optimize existing designs, and enable cost-effective repairs. Ideal for industries dealing with obsolete parts, product improvements, or design replication.",
     "software": "Geomagic Design X, PolyWorks",
     "images": ["assets/img/rev_eng.jpg"]
+  },
+    {
+    "key": "Artificial Engineering",
+    "title": "Artificial Engineering",
+    "description": "AI technologies, including machine learning and deep learning, are integrated with Internet of Things (IoT) devices, cyber-physical systems, and other Industry 4.0 components to enable automation, data analysis, and predictive capabilities. This leads to optimized production processes, reduced costs, and improved product quality. ",
+    "software": "Geomagic Design X, PolyWorks",
+    "images": ["assets/img/rev_eng.jpg"]
+  },
+    {
+    "key": "Cyber Security",
+    "title": "Cyber Security",
+    "description": "Cybersecurity in Industry 4.0 is crucial due to the increased connectivity and data exchange in modern manufacturing. It involves protecting industrial control systems (ICS) and operational technology (OT) from cyberattacks, which can disrupt production, compromise product quality, and endanger sensitive information. ",
+    "software": "Geomagic Design X, PolyWorks",
+    "images": ["assets/img/rev_eng.jpg"]
   }
 ]

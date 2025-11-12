@@ -279,7 +279,7 @@ html, body {
     height: 70vh;
     display: flex;
     align-items: center;
-
+    justify-content: center; /* Center content horizontally */
     color: white;
     box-sizing: border-box;
 
